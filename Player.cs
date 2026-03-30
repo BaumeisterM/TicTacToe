@@ -48,8 +48,8 @@ public class Player
 
             SwitchPlayer();
         }
-
-        Console.WriteLine("\nCongratulations!\n\nPress any key ...");
+        if (!_board.IsFull())
+            Console.WriteLine("\nCongratulations!\n\nPress any key ...");
         Console.ReadKey();
     }
     private void SwitchPlayer()
